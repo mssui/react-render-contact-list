@@ -24,20 +24,41 @@ code {
  
 }
 
-.column-item {
-  flex: 1 0 50%; 
+.column-details {
+  flex: 1 0 60%; 
   margin: 2px;
-  background-color: lightgreen;
-  list-style: none;
+  background-color: white;
+ 
+}
+.column-list{
+  flex: 1 0 40%; 
+  margin: 2px;
+  color: white;
+  background-color: steelblue;
+  
 }
 
 .contact-list{
   display: flex;
-  flex-direction: column;
+  
 }
-.contact-list .li{
-  font-size: medium;
+
+.contact-list li{
+  list-style: none;
+  margin: 0 1rem 1rem 0;
+
 }
+
 .contact-details{
   display: flex;
+  animation: fade-in-keyframes 1s;
+  
+}
+@keyframes fade-in-keyframes {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+.contact-details li{
+  list-style: none;
+  margin: 0 1rem 1rem 0;
 }

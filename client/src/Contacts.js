@@ -1,14 +1,22 @@
 import React from "react"
 import { ContactListItem } from "./ContactListItem"
 import { ContactDetails } from "./ContactDetails"
+import axios from "axios"
 
 import "./index.css"
-
-
-
 class Contacts extends React.Component {
+  componentDidMount() {
+    axios.get('contacts')
+      .then(res => {
+        const contacts = res.data;
+        this.setState({ contacts });
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
   state = {
-    contacts: [{ id: 1, name: "jhgjg", detail: "about this list item" }, { id: 2, name: "David", detail: "David item details" },],
+    contacts: [],
     selectedIndex: 1
   }
 
@@ -20,13 +28,15 @@ class Contacts extends React.Component {
   render() {
     return (
       <>
-        <ul className="column-item">
+
+        <ul className="column-list">
           {this.state.contacts.map((contact, i) => (
             <ContactListItem handleClick={this.handleClick} key={i} index={i} contact={contact} />
           ))}
 
         </ul>
-        <div className="column-item">
+        <div className="column-details">
+          <h4>Contact Details</h4>
           <ContactDetails contacts={this.state.contacts} index={this.state.selectedIndex} />
         </div>
       </>

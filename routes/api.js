@@ -12,6 +12,7 @@ router.get("/contacts", async (req, res, next) => {
             name: contactsData[i].name,
             userName: contactsData[i].userName,
             email: contactsData[i].email,
+            phone: contactsData[i].phone,
             website: contactsData[i].website,
         });
     }
