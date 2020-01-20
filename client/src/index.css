@@ -18,3 +18,26 @@ code {
  background-color: aliceblue;
 }
 
+.main-wrapper{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.column-item {
+  flex: 1 0 50%; 
+  margin: 2px;
+  background-color: lightgreen;
+  list-style: none;
+}
+
+.contact-list{
+  display: flex;
+  flex-direction: column;
+}
+.contact-list .li{
+  font-size: medium;
+}
+.contact-details{
+  display: flex;
+}

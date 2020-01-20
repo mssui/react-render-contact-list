@@ -1,6 +1,12 @@
 import React from "react"
+import "./index.css"
 
-export const ContactDetails = ({detail}) =>{ 
+export const ContactDetails = ({ contacts, index }) => {
     return (
-<h6>{detail}</h6>
-)}
+        <>
+            {contacts.map((contact, i) => (
+                (i === index) ? <div className={"contact-details"}>{contact.detail}</div> : null
+            ))}
+        </>
+    )
+}
