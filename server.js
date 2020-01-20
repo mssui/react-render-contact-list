@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const bodyparser = require("body-parser");
 const cors = require("cors");
 
-
 mongoose.Promise = global.Promise;
 const port = process.env.PORT || 3030;
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/contact-list');
