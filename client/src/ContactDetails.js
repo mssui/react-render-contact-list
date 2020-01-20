@@ -10,9 +10,10 @@ export const ContactDetails = ({ contacts, index }) => {
                         <li>ID: {index + 1}</li>
                         <li>Name :{contact.name}</li>
                         <li>Username: {contact.userName}</li>
-                        <li>Email: {contact.email}</li>
-                        <li>Phone: {contact.phone}</li>
+                        <li>Email: <a href={"mailto:" + contact.email}>{contact.email}</a></li>
+                        <li>Phone: <a href={"tel:" + contact.phone}> {contact.phone}</a></li>
                         <li>Website: {contact.website}</li></ul>
+                    <img width="200px" height="200px" src={process.env.PUBLIC_URL + `/${index}.png`} />
                 </div> : null
             ))}
         </>

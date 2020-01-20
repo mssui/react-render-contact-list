@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+a {
+  text-decoration:none;
+  color: black;
+}
+
 .wrapper {
  display: flex;
  width: auto;
@@ -50,10 +55,12 @@ code {
 }
 
 .contact-details{
-  display: flex;
+  display: inline-flex;
   text-align: left;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   animation: fade-in-keyframes 1s;
-  
 }
 @keyframes fade-in-keyframes {
   from {opacity: 0}
