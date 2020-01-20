@@ -5,14 +5,15 @@
   "author": "Asli Ari <asliari2012@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "engines": {
     "node": "12.14.1"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.4.5"
+    "mongoose": "^5.4.5",
+    "body-parser": "^1.18.3"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
