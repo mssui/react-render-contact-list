@@ -70,9 +70,10 @@ class Contacts extends React.Component {
         <div className="column-details">
           <h4>Contact Details</h4>
           <AddContacts show={this.state.show} handleClose={this.hideModal} handleChange={this.handleChange} handleForm={this.handleForm} />
-          <button type="button" onClick={this.showModal}>
+          <button data-test="modal-button" className="button" type="button" onClick={this.showModal}>
             Add new contact
         </button>
+          <div className="divider" />
           <ContactDetails contacts={this.state.contacts} index={this.state.selectedIndex} />
         </div>
       </>

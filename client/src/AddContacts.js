@@ -42,8 +42,8 @@ export const AddContacts = ({ handleClose, show, handleForm, handleChange }) => 
                     required
                 />
                 <div>
-                    <button onClick={handleForm}>Save</button>
-                    <button onClick={handleClose}>Close</button></div>
+                    <button className="button" onClick={handleForm}>Save</button>
+                    <button className="button" onClick={handleClose}>Close</button></div>
             </section>
         </div >
     );

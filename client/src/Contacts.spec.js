@@ -20,4 +20,9 @@ describe('Component tests', () => {
         const wrapper = mount(<ContactDetails contacts={props.constacts} index={props.index} />);
         expect(wrapper.find('li').length).toBe(6)
     });
+    it('Modal is not open', () => {
+        const wrapper = mount(<App />);
+        expect(wrapper.find("modal display-block").length).toBe(0)
+    });
 })
+

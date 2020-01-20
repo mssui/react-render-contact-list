@@ -51,6 +51,7 @@ code {
 
 .contact-details{
   display: flex;
+  text-align: left;
   animation: fade-in-keyframes 1s;
   
 }
@@ -63,13 +64,25 @@ code {
   margin: 0 1rem 1rem 0;
 }
 
-divider {
+.divider {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid gray;
   margin: 1em 0;
   padding: 0;
+}
+
+.button {
+  background-color: steelblue; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 1em;
 }
 /* Form Styles */
 input[type=text], select {
@@ -98,19 +111,19 @@ input[type=submit]:hover {
 }
 
 
-/* The Modal (background) */
+/* The Modal  */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
 }
 
 /* Modal Content */
