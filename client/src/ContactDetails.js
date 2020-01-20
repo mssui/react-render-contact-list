@@ -7,7 +7,7 @@ export const ContactDetails = ({ contacts, index }) => {
             {contacts.map((contact, i) => (
                 (i === index) ? <div className={"contact-details"} key={i}>
                     <ul>
-                        <li>ID: {index}</li>
+                        <li>ID: {index + 1}</li>
                         <li>Name :{contact.name}</li>
                         <li>Username: {contact.userName}</li>
                         <li>Email: {contact.email}</li>

@@ -11,7 +11,6 @@ describe('App rendering', () => {
     });
 })
 
-
 describe('Component tests', () => {
     it('renders without crashing', () => {
         const props = {

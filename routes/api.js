@@ -20,11 +20,9 @@ router.get("/contacts", async (req, res, next) => {
 });
 //POST REQUESTS
 router.post("/addcontact", async (req, res, next) => {
-    console.log(req.body)
     const newpost = await Contacts.add(req.body);
     console.log(req.body)
     res.send(newpost);
 });
-
 
 module.exports = router;
